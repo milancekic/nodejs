@@ -1,7 +1,9 @@
 #!/usr/bin/env nodejs
 var http = require('http');
+var fs = require('fs');
+var index = fs.readFileSync('index.html');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('<h1>Hello to New World</h1>');
+  res.end(index);
 }).listen(8080, 'localhost');
 console.log('Server running at http://localhost:8080/');
