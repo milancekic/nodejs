@@ -5,4 +5,4 @@ git pull origin master
 pm2 delete all
 
 # start hello.js
-pm2 start hello.js
+pm2 start hello/hello.js
