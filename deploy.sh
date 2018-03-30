@@ -9,3 +9,7 @@ cd hello
 pm2 start hello.js
 cd ..
 
+# start chat/index.js
+cd chat
+pm2 start index.js
+cd ..
